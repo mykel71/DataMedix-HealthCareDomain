@@ -1,1 +1,1 @@
-# DataMedix-HealthCareDomain
+# DataMedix-Health Care Domain Project
