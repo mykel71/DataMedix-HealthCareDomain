@@ -16,3 +16,4 @@ After successful migrated data from on-prem to Azure SQL Database:
   - Created revelant and necesary resources with our main resource groupo in Azure
       - Azure data factory for ingestion and ochestration
       - Databricks for transformation (Medallion Architecture)
+      - Storage Acc - Azure data lake Gen 2
