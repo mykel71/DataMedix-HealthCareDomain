@@ -485,6 +485,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"targetpath": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
