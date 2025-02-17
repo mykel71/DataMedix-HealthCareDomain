@@ -100,7 +100,7 @@
 							}
 						},
 						{
-							"name": "If Condition1",
+							"name": "IsFileExists",
 							"type": "IfCondition",
 							"dependsOn": [
 								{
@@ -112,6 +112,10 @@
 							],
 							"userProperties": [],
 							"typeProperties": {
+								"expression": {
+									"value": "@equals(activity('File_Exists').output.exists, true)",
+									"type": "Expression"
+								},
 								"ifTrueActivities": [
 									{
 										"name": "Archive File",
