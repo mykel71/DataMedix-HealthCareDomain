@@ -168,7 +168,7 @@
 												"parameters": {
 													"container": "bronze",
 													"file_path": {
-														"value": "@item().file_path",
+														"value": "@item().targetpath",
 														"type": "Expression"
 													},
 													"file_name": {
