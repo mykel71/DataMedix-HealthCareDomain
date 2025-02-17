@@ -11,31 +11,19 @@
 		"AzureDatabricksDeltaLake_accessToken": {
 			"value": ""
 		},
-		"ls_azuresqldb_jhb_password": {
-			"value": ""
-		},
-		"ls_azuresqldb_tshwane_password": {
+		"AzureSQLDatabases_ls_password": {
 			"value": ""
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://storaccdatamedix.dfs.core.windows.net/"
 		},
-		"ls_azuresqldb_jhb_properties_typeProperties_server": {
+		"AzureSQLDatabases_ls_properties_typeProperties_server": {
 			"value": "datamedixserverdev.database.windows.net"
 		},
-		"ls_azuresqldb_jhb_properties_typeProperties_database": {
-			"value": "JohannesburgMedSolutions"
+		"AzureSQLDatabases_ls_properties_typeProperties_database": {
+			"value": "@{linkedService().db_name}"
 		},
-		"ls_azuresqldb_jhb_properties_typeProperties_userName": {
-			"value": "mikedev"
-		},
-		"ls_azuresqldb_tshwane_properties_typeProperties_server": {
-			"value": "datamedixserverdev.database.windows.net"
-		},
-		"ls_azuresqldb_tshwane_properties_typeProperties_database": {
-			"value": "TshwaneMedSolutions"
-		},
-		"ls_azuresqldb_tshwane_properties_typeProperties_userName": {
+		"AzureSQLDatabases_ls_properties_typeProperties_userName": {
 			"value": "mikedev"
 		},
 		"containerUri": {

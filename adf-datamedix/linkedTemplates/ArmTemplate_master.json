@@ -15,39 +15,23 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'AzureDatabricksDeltaLake'"
 		},
-		"ls_azuresqldb_jhb_password": {
+		"AzureSQLDatabases_ls_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'ls_azuresqldb_jhb'"
-		},
-		"ls_azuresqldb_tshwane_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'ls_azuresqldb_tshwane'"
+			"metadata": "Secure string for 'password' of 'AzureSQLDatabases_ls'"
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storaccdatamedix.dfs.core.windows.net/"
 		},
-		"ls_azuresqldb_jhb_properties_typeProperties_server": {
+		"AzureSQLDatabases_ls_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "datamedixserverdev.database.windows.net"
 		},
-		"ls_azuresqldb_jhb_properties_typeProperties_database": {
+		"AzureSQLDatabases_ls_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "JohannesburgMedSolutions"
+			"defaultValue": "@{linkedService().db_name}"
 		},
-		"ls_azuresqldb_jhb_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "mikedev"
-		},
-		"ls_azuresqldb_tshwane_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "datamedixserverdev.database.windows.net"
-		},
-		"ls_azuresqldb_tshwane_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "TshwaneMedSolutions"
-		},
-		"ls_azuresqldb_tshwane_properties_typeProperties_userName": {
+		"AzureSQLDatabases_ls_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "mikedev"
 		},
@@ -84,32 +68,20 @@
 					"AzureDatabricksDeltaLake_accessToken": {
 						"value": "[parameters('AzureDatabricksDeltaLake_accessToken')]"
 					},
-					"ls_azuresqldb_jhb_password": {
-						"value": "[parameters('ls_azuresqldb_jhb_password')]"
-					},
-					"ls_azuresqldb_tshwane_password": {
-						"value": "[parameters('ls_azuresqldb_tshwane_password')]"
+					"AzureSQLDatabases_ls_password": {
+						"value": "[parameters('AzureSQLDatabases_ls_password')]"
 					},
 					"AzureDataLakeStorage_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]"
 					},
-					"ls_azuresqldb_jhb_properties_typeProperties_server": {
-						"value": "[parameters('ls_azuresqldb_jhb_properties_typeProperties_server')]"
+					"AzureSQLDatabases_ls_properties_typeProperties_server": {
+						"value": "[parameters('AzureSQLDatabases_ls_properties_typeProperties_server')]"
 					},
-					"ls_azuresqldb_jhb_properties_typeProperties_database": {
-						"value": "[parameters('ls_azuresqldb_jhb_properties_typeProperties_database')]"
+					"AzureSQLDatabases_ls_properties_typeProperties_database": {
+						"value": "[parameters('AzureSQLDatabases_ls_properties_typeProperties_database')]"
 					},
-					"ls_azuresqldb_jhb_properties_typeProperties_userName": {
-						"value": "[parameters('ls_azuresqldb_jhb_properties_typeProperties_userName')]"
-					},
-					"ls_azuresqldb_tshwane_properties_typeProperties_server": {
-						"value": "[parameters('ls_azuresqldb_tshwane_properties_typeProperties_server')]"
-					},
-					"ls_azuresqldb_tshwane_properties_typeProperties_database": {
-						"value": "[parameters('ls_azuresqldb_tshwane_properties_typeProperties_database')]"
-					},
-					"ls_azuresqldb_tshwane_properties_typeProperties_userName": {
-						"value": "[parameters('ls_azuresqldb_tshwane_properties_typeProperties_userName')]"
+					"AzureSQLDatabases_ls_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSQLDatabases_ls_properties_typeProperties_userName')]"
 					}
 				}
 			},
