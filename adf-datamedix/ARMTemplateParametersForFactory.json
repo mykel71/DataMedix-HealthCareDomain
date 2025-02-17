@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-datamedix"
+		},
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricksDeltaLake_accessToken": {
+			"value": ""
+		},
+		"ls_azuresqldb_jhb_password": {
+			"value": ""
+		},
+		"ls_azuresqldb_tshwane_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://storaccdatamedix.dfs.core.windows.net/"
+		},
+		"ls_azuresqldb_jhb_properties_typeProperties_server": {
+			"value": "datamedixserverdev.database.windows.net"
+		},
+		"ls_azuresqldb_jhb_properties_typeProperties_database": {
+			"value": "JohannesburgMedSolutions"
+		},
+		"ls_azuresqldb_jhb_properties_typeProperties_userName": {
+			"value": "mikedev"
+		},
+		"ls_azuresqldb_tshwane_properties_typeProperties_server": {
+			"value": "datamedixserverdev.database.windows.net"
+		},
+		"ls_azuresqldb_tshwane_properties_typeProperties_database": {
+			"value": "TshwaneMedSolutions"
+		},
+		"ls_azuresqldb_tshwane_properties_typeProperties_userName": {
+			"value": "mikedev"
+		}
+	}
+}
