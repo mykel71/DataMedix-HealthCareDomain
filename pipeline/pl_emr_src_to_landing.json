@@ -90,6 +90,7 @@
 								],
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
+									"recursive": true,
 									"modifiedDatetimeStart": null,
 									"modifiedDatetimeEnd": null,
 									"enablePartitionDiscovery": false
@@ -432,7 +433,7 @@
 												"parameters": {
 													"container": "bronze",
 													"file_path": {
-														"value": "@item().tablepath",
+														"value": "@item().targetpath",
 														"type": "Expression"
 													},
 													"file_name": "@split(item().tablename,'.')[1]"
