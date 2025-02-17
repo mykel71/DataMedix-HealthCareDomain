@@ -14,9 +14,6 @@
 			},
 			"file_name": {
 				"type": "String"
-			},
-			"targetpath": {
-				"type": "String"
 			}
 		},
 		"annotations": [],
