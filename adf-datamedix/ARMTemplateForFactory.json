@@ -212,11 +212,11 @@
 														"parameters": {
 															"container": "bronze",
 															"file_path": {
-																"value": "@item().file_path",
+																"value": "@item().targetpath",
 																"type": "Expression"
 															},
 															"file_name": {
-																"value": "@split(item().table_name,'.')[1]",
+																"value": "@split(item().tablename,'.')[1]",
 																"type": "Expression"
 															}
 														}
