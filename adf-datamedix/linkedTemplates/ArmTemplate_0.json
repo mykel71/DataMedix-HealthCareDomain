@@ -713,7 +713,7 @@
 														"parameters": {
 															"container": "bronze",
 															"file_path": {
-																"value": "@item().tablepath",
+																"value": "@item().targetpath",
 																"type": "Expression"
 															},
 															"file_name": "@split(item().tablename,'.')[1]"
@@ -767,6 +767,11 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"parameters": {
+					"targetpath": {
+						"type": "String"
+					}
 				},
 				"annotations": []
 			},
