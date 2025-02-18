@@ -532,11 +532,6 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"parameters": {
-					"targetpath": {
-						"type": "String"
-					}
-				},
 				"annotations": []
 			},
 			"dependsOn": [
