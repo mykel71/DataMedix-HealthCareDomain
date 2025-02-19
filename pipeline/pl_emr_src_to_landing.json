@@ -55,7 +55,8 @@
 						"value": "@activity('lookup_emr_configs').output.value",
 						"type": "Expression"
 					},
-					"isSequential": true,
+					"isSequential": false,
+					"batchCount": 5,
 					"activities": [
 						{
 							"name": "File_Exists",
@@ -199,8 +200,6 @@
 						{
 							"name": "ConditionalLoad",
 							"type": "IfCondition",
-							"state": "Inactive",
-							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "IsFileExists",
@@ -486,6 +485,8 @@
 						{
 							"name": "If Condition1",
 							"type": "IfCondition",
+							"state": "Inactive",
+							"onInactiveMarkAs": "Succeeded",
 							"dependsOn": [
 								{
 									"activity": "ConditionalLoad",
